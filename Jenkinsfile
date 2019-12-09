@@ -7,7 +7,7 @@ pipeline {
 
         stage('Clone nodejshapi app..') {
             steps {
-                git 'https://github.com/tonykambo/nodejshapi'
+                git 'https://github.com/tonykambo/nodejshapihealth'
             }
         }
         
@@ -28,7 +28,7 @@ pipeline {
                 sh 'npm test'
             }
         }
-        
+
         stage('User Acceptance Testing...') {
             steps {
                 echo 'User Acceptance Testing..'
